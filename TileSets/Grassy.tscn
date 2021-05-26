@@ -1,23 +1,24 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Tiles/grassCliffLeft.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Tiles/grassCenter.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Tiles/grassCenter_rounded.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Tiles/grass.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Tiles/bg.png" type="Texture" id=5]
 
-[sub_resource type="ConvexPolygonShape2D" id=2]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 70, 70.7243, 0, 70.7243, 0.116707, 0, 70, 0.116707 )
 
-[sub_resource type="ConvexPolygonShape2D" id=3]
+[sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 69.8871, 70, 0.116707, 70, 0.116707, 0, 69.8871, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=4]
+[sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 70, 70, 0.116707, 70, 0.116707, 0.116707, 70, 0.116707 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
+[sub_resource type="ConvexPolygonShape2D" id=4]
 points = PoolVector2Array( 70, 73, 0.116707, 73, 0.116707, 0.116707, 70, 0.116707 )
 
-[sub_resource type="TileSet" id=1]
+[sub_resource type="TileSet" id=5]
 0/name = "grass.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -28,14 +29,14 @@ points = PoolVector2Array( 70, 73, 0.116707, 73, 0.116707, 0.116707, 70, 0.11670
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 2 )
+0/shape = SubResource( 1 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 2 ),
+"shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -49,14 +50,14 @@ points = PoolVector2Array( 70, 73, 0.116707, 73, 0.116707, 0.116707, 70, 0.11670
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 3 )
+1/shape = SubResource( 2 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
@@ -70,14 +71,14 @@ points = PoolVector2Array( 70, 73, 0.116707, 73, 0.116707, 0.116707, 70, 0.11670
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 4 )
+2/shape = SubResource( 3 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 3 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
@@ -91,18 +92,33 @@ points = PoolVector2Array( 70, 73, 0.116707, 73, 0.116707, 0.116707, 70, 0.11670
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 5 )
+3/shape = SubResource( 4 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
+4/name = "bg.png 4"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 70, 70 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
 
 [node name="TileMap" type="TileMap"]
-tile_set = SubResource( 1 )
+tile_set = SubResource( 5 )
+cell_size = Vector2( 70, 70 )
 format = 1

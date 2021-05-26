@@ -1,16 +1,18 @@
 extends KinematicBody2D
 
-export (int) var speed = 120
-export (int) var jump_speed = -180
-export (int) var gravity = 400
+var speed = 500
+var jump_speed = -500
+var gravity = 800
 
 var velocity = Vector2.ZERO
 
 func get_input():
 	velocity.x = 0
 	if Input.is_action_pressed("RIGHT"):
+		$Sprite/p1_walk08.set_flip_h(false)
 		velocity.x += speed
 	if Input.is_action_pressed("LEFT"):
+		$Sprite/p1_walk08.set_flip_h(true)
 		velocity.x -= speed
 
 func _physics_process(delta):

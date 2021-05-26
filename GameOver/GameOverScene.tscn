@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GameOver/Button2.gd" type="Script" id=1]
+[ext_resource path="res://GameOver/Button.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 404.0
+margin_top = 157.0
+margin_right = 510.0
+margin_bottom = 177.0
+text = "Try Again"
+script = ExtResource( 2 )
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 405.0
+margin_top = 224.0
+margin_right = 511.0
+margin_bottom = 244.0
+text = "Quit"
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 420.0
+margin_top = 104.0
+margin_right = 497.0
+margin_bottom = 118.0
+text = "Game Over!"
