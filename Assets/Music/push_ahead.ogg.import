@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/push_ahead.ogg-7361ba66f48436fdd3e07f18e5fe3e86.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/push_ahead.ogg"
+dest_files=[ "res://.import/push_ahead.ogg-7361ba66f48436fdd3e07f18e5fe3e86.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

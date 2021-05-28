@@ -10,11 +10,14 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 136.308
-margin_top = 87.3081
-margin_right = 677.308
-margin_bottom = 101.308
-text = "All art assets for the player, tiles, enemies come from \"Kenney.nl\" on opengameart. "
+margin_left = 24.9454
+margin_top = 33.8541
+margin_right = 735.945
+margin_bottom = 98.8541
+text = "All art assets for the player, tiles, enemies come from \"Kenney.nl\" on opengameart. 
+credit for the music track \"Stargazer\" goes to \"Centurion_of_war\" on opengameart, the track played in level one.
+Credit for the level two track \"Pushing Ahead\" goes to \"Centurion_of_war\" on opengameart.
+Credit for the level three track, \"Dawn of Hope\" goes to \"Centurion_of_war\" on opengameart."
 
 [node name="back" type="Button" parent="."]
 margin_left = 353.687

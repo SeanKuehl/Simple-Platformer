@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dawn_of_hope_low.ogg-3f8e7d2cd07102010c25456e51f917a1.oggstr"
+
+[deps]
+
+source_file="res://Assets/Music/dawn_of_hope_low.ogg"
+dest_files=[ "res://.import/dawn_of_hope_low.ogg-3f8e7d2cd07102010c25456e51f917a1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
