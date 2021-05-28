@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MainMenuFolder/ControlsFolder/back.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 302.015
+margin_top = 97.9989
+margin_right = 662.015
+margin_bottom = 111.999
+text = "W jumps and A and D move. Use the arrow keys to look."
+
+[node name="back" type="Button" parent="."]
+margin_left = 460.595
+margin_top = 147.889
+margin_right = 501.595
+margin_bottom = 167.889
+text = "back"
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="back" to="back" method="_on_back_pressed"]

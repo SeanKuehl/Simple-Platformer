@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MainMenuFolder/CreditsFolder/back.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 136.308
+margin_top = 87.3081
+margin_right = 677.308
+margin_bottom = 101.308
+text = "All art assets for the player, tiles, enemies come from \"Kenney.nl\" on opengameart. "
+
+[node name="back" type="Button" parent="."]
+margin_left = 353.687
+margin_top = 116.708
+margin_right = 394.687
+margin_bottom = 136.708
+text = "back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="back" to="back" method="_on_back_pressed"]
