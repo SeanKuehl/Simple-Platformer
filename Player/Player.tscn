@@ -1,13 +1,52 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Player/p1_walk08.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Player/p1_walk01.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Player/p1_walk02.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Player/p1_walk05.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Player/p1_walk11.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Player/p1_walk07.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Player/p1_walk04.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Player/p1_walk06.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Player/p1_walk10.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Player/p1_walk09.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Player/p1_walk03.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 33.5344, 47.5331 )
 
+[sub_resource type="Animation" id=3]
+resource_name = "Idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite/p1_walk08:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 10 ) ]
+}
+
 [sub_resource type="Animation" id=2]
 resource_name = "Walk Left"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite/p1_walk08:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ) ]
+}
 
 [node name="Player" type="KinematicBody2D" groups=[
 "Player",
@@ -22,7 +61,7 @@ shape = SubResource( 1 )
 
 [node name="p1_walk08" type="Sprite" parent="Sprite"]
 position = Vector2( -0.25, -5.25 )
-texture = ExtResource( 2 )
+texture = ExtResource( 10 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, 2 )
@@ -35,4 +74,5 @@ position = Vector2( 0, -3.36358 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Idle = SubResource( 3 )
 "anims/Walk Left" = SubResource( 2 )

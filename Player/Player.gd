@@ -17,10 +17,16 @@ func get_input():
 	velocity.x = 0
 	if Input.is_action_pressed("RIGHT"):
 		$Sprite/p1_walk08.set_flip_h(false)
+		$AnimationPlayer.play("Walk Left")
+		
 		velocity.x += speed
 	if Input.is_action_pressed("LEFT"):
 		$Sprite/p1_walk08.set_flip_h(true)
+		$AnimationPlayer.play("Walk Left")
 		velocity.x -= speed
+	#when we're not moving show, don't play the animation
+	if velocity.x == 0:
+		$AnimationPlayer.play("Idle")
 		
 	#use CAM_UP, CAM_DOWN, CAM_LEFT, and CAM_RIGHT to "look" or move the camera
 	#$Camera2D.position -= transform.x * 10
