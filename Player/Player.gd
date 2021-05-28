@@ -5,7 +5,7 @@ var jump_speed = -500
 var gravity = 800
 
 var buttonPressed = false
-var cameraMoveAmount = 50
+var cameraMoveAmount = 200
 
 var velocity = Vector2.ZERO
 

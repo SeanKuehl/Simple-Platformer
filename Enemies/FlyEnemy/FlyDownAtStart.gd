@@ -39,7 +39,7 @@ func _physics_process(delta):
 			
 		var collision = move_and_collide(velocity * delta)	
 		if collision:
-			print("here")
+			
 			waitTimer += waitTimerIncrement
 			
 			if waitTimer >= waitTimerThreshold:
