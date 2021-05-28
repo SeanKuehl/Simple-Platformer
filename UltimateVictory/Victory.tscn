@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UltimateVictory/VictoryMenuButtons.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 48.1085
+margin_top = 8.01809
+margin_right = 48.1085
+margin_bottom = 8.01807
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 383.977
+margin_top = 93.5444
+margin_right = 443.977
+margin_bottom = 107.544
+text = "You Won!"
+
+[node name="Play Again" type="Button" parent="."]
+margin_left = 375.101
+margin_top = 133.293
+margin_right = 452.101
+margin_bottom = 155.293
+text = "Play Again"
+script = ExtResource( 1 )
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 393.54
+margin_top = 171.963
+margin_right = 433.54
+margin_bottom = 191.963
+text = "Quit"
+
+[connection signal="pressed" from="Play Again" to="Play Again" method="_on_Play_Again_pressed"]
+[connection signal="pressed" from="Quit" to="Play Again" method="_on_Quit_pressed"]

@@ -5,9 +5,15 @@ export (int) var jump_speed = -180
 export (int) var gravityEffect = 400
 var goingLeft = true
 
+#add player as exception so that the snail doesn't turn around when it
+#sees the player
+
+
+
 var velocity = Vector2.ZERO
 
 func _ready():
+	
 	get_node("Area").connect("body_entered", self, "collision")
 
 func collision(entity):
@@ -36,7 +42,8 @@ func _physics_process(delta):
 			velocity = move_and_slide(velocity, Vector2.UP)
 			
 			var collision = $LeftHit.is_colliding()	#this collision is for blocks right in front of them
-			if collision:
+			var collider = $LeftHit.get_collider()
+			if collision and not collider.is_in_group("Player"):
 				
 				speed = speed *-1
 				goingLeft = false
@@ -68,7 +75,8 @@ func _physics_process(delta):
 			velocity = move_and_slide(velocity, Vector2.UP)
 			
 			var collision = $RightHit.is_colliding()
-			if collision:
+			var collider = $RightHit.get_collider()
+			if collision and not collider.is_in_group("Player"):
 				
 				speed = speed *-1
 				goingLeft = true
