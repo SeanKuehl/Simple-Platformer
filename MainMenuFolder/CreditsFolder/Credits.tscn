@@ -5,25 +5,36 @@
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 7.0
+margin_top = 18.0
+margin_right = 7.0
+margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 24.9454
-margin_top = 33.8541
-margin_right = 735.945
-margin_bottom = 98.8541
-text = "All art assets for the player, tiles, enemies come from \"Kenney.nl\" on opengameart. 
-credit for the music track \"Stargazer\" goes to \"Centurion_of_war\" on opengameart, the track played in level one.
-Credit for the level two track \"Pushing Ahead\" goes to \"Centurion_of_war\" on opengameart.
-Credit for the level three track, \"Dawn of Hope\" goes to \"Centurion_of_war\" on opengameart."
+margin_left = 25.0
+margin_top = 34.0
+margin_right = 1088.0
+margin_bottom = 99.0
+text = "All art assets for the player, tiles, enemies come from \"Kenney.nl\" on opengameart, under the cco license. 
+credit for the music track \"Stargazer\" goes to \"Centurion_of_war\" on opengameart,
+ the track played in level one, under the cco license.
+Credit for the level two track \"Pushing Ahead\" goes to 
+\"Centurion_of_war\" on opengameart under the cc by 4.0 license https://creativecommons.org/licenses/by/4.0/.
+
+Credit for the level three track, \"Dawn of Hope\" goes to 
+\"Centurion_of_war\" on opengameart under the cc by 4.0 license https://creativecommons.org/licenses/by/4.0/."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="back" type="Button" parent="."]
-margin_left = 353.687
-margin_top = 116.708
-margin_right = 394.687
-margin_bottom = 136.708
+margin_left = 348.342
+margin_top = 187.98
+margin_right = 389.342
+margin_bottom = 207.98
 text = "back"
 script = ExtResource( 1 )
 __meta__ = {
